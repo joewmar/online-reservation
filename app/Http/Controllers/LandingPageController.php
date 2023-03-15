@@ -11,7 +11,7 @@ class LandingPageController extends Controller
     public function index(){
         if(View::exists('welcome')){
             $activeNavItem = 'Home';
-            return view('welcome', ["activeNav" => $activeNavItem]);
+            return view('customer.reservation', ["activeNav" => $activeNavItem]);
         }
         else{
             return abort(404);
