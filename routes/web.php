@@ -17,6 +17,10 @@ use App\Http\Controllers\LandingPageController;
 
 Route::controller(LandingPageController::class)->group(function(){
     Route::get('/', 'index');
+    Route::get('/login', 'login');
+    Route::get('/register', 'register');
+    Route::get('/reservation', 'reservation');
+
 });
 Route::controller(SystemController::class)->group(function(){
     Route::get('/system/analytics', 'analytics');
@@ -24,5 +28,5 @@ Route::controller(SystemController::class)->group(function(){
     Route::get('/system/rooms', 'rooms');
     Route::get('/system/accommodations', 'accommodations');
     Route::get('/system/accounts', 'accounts');
-    Route::get('/system/login', 'login');
+    // Route::get('/system/login', 'login');
 });

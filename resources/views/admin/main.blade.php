@@ -16,4 +16,22 @@
     @endif
 
 </main>
+<script type="text/javascript" src='{{Vite::asset("resources/js/fullcalendar/dist/index.global.js")}}'></script>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        headerToolbar: {
+            left: 'prev, next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay'
+        },
+      });
+      calendar.render();
+    });
+
+  </script>
 @include('partials.footer')
