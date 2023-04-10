@@ -19,7 +19,9 @@ Route::controller(LandingPageController::class)->group(function(){
     Route::get('/', 'index');
     Route::get('/login', 'login');
     Route::get('/register', 'register');
-    Route::get('/reservation', 'reservation');
+    Route::get('/reservation/step1', 'reservationStep1');
+    Route::get('/reservation/step2', 'reservationStep2');
+    Route::get('/reservation/step3', 'reservationStep3');
 
 });
 Route::controller(SystemController::class)->group(function(){
@@ -28,5 +30,6 @@ Route::controller(SystemController::class)->group(function(){
     Route::get('/system/rooms', 'rooms');
     Route::get('/system/accommodations', 'accommodations');
     Route::get('/system/accounts', 'accounts');
+    Route::get('/system/home', 'home');
     // Route::get('/system/login', 'login');
 });

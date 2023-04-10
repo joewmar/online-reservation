@@ -9,7 +9,7 @@
         @include('components.navbar.navbar_items')
         <li><hr></li>
         <li>
-          <a class="btn bg-primary flex md:hidden text-white">Book Now</a>
+          <a class="btn bg-primary flex md:hidden text-white" href="/reservation/step1">Book Now</a>
         </li>
       </ul>
     </div>
@@ -21,7 +21,7 @@
     </ul>
   </div>
   <div class="navbar-end">
-    <a class="btn bg-primary hidden md:flex text-white">Book Now</a>
+    <a class="btn bg-primary hidden md:flex text-white" href="/reservation/step1">Book Now</a>
   </div>
 </div>
 

@@ -227,7 +227,7 @@
         </p>
       </div>
   
-      <div class="mt-20 grid grid-cols-3 gap-10">
+      <div class="mt-20 grid grid-rows-1 md:grid-cols-3 gap-10">
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure><img src="https://source.unsplash.com/random/301x301/" alt="Shoes" /></figure>
             <div class="card-body">

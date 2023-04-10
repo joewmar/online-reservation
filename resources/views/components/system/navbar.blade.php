@@ -1,4 +1,4 @@
-<nav class="navbar bg-base-100 fixed">
+<nav class="hidden md:flex navbar row-span-full bg-base-100 fixed z-30">
     <div class="flex-1">
       <a class="btn btn-ghost normal-case text-xl">LOGO</a>
     </div>
@@ -38,3 +38,53 @@
       </div>
     </div>
 </nav>
+
+<div class="flex md:hidden navbar bg-base-100">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <label tabindex="0" class="btn btn-ghost btn-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+      </label>
+      <ul tabindex="0" class="h-screen menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 w-52">
+        @foreach ($sidebarItems as $key => $item)
+            @if ($key === $activeBar)
+                <li>
+                    <a href="{{$item['link']}}" class="active">
+                        <i class="{{$item['icon']}} h-5 w-5"></i>
+                        {{$key}}
+                    </a>
+                </li>
+            @else
+                <li>
+                  <a href="{{$item['link']}}">
+                      <i class="{{$item['icon']}} h-5 w-5"></i>
+                  {{$key}}
+                  </a>
+                </li>
+            @endif
+        @endforeach
+      </ul>
+    </div>
+  </div>
+  <div class="navbar-center">
+    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+  </div>
+  <div class="navbar-end">
+    <div class="dropdown dropdown-end">
+      <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+        <div class="w-10 rounded-full">
+          <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+        </div>
+      </label>
+      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+        <li>
+          <a class="justify-between">
+            Profile
+          </a>
+        </li>
+        <li><a>Settings</a></li>
+        <li><a>Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

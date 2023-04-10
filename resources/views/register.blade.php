@@ -1,195 +1,165 @@
 @include('partials.header')
-<div class="header finisher-header" style="width: 100%; height: 100%;">
-  <div class=" bg-base-200 md:w-5/12 sm:w-full h-full md:h-auto rounded-2xl shadow-lg mx-auto place-items-center">
-    <div class="mx-auto px-4 py-20 my-20 sm:px-6 lg:px-8 relative">
-      <div class="mx-auto max-w-lg text-center">
-        <h1 class="text-2xl font-bold sm:text-3xl">Sign up<h1>
-  
-    </div>
+<section class="bg-white">
+  <div class="lg:grid lg:min-h-screen lg:grid-cols-12">
+    <section
+      class="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6"
+    >
+      <img alt="hero" src="{{asset('images/main-hero3.jpg')}}" class="absolute inset-0 h-full w-full object-cover opacity-80"/>
+      <div class="hidden lg:relative lg:block lg:p-12">
+        <a class="block text-white" href="/">
+          <span class="sr-only">Home</span>
+          <div>LOGO</div>
+        </a>
 
-    <form action="" class="mx-auto mt-8 mb-0 max-w-md space-y-4 ">
-      <div class="grid h-full grid-flow-col gap-2 card rounded-box place-items-center ">
-        <!-- Facebook -->
-        <button
-          type="submit"
-          class="btn btn-info btn-circle  text-white bg-blue-500 hover:text-blue-500"          
-          >
-          <i class="fa-brands fa-square-facebook text-2xl"></i>
-        
-        </button>
-        <!-- Facebook -->
-        <button
-          type="submit"
-          class="btn btn-error btn-circle  bg-red-500 text-white hover:text-red-500"          
-          >
-          <i class="fa-brands fa-google text-2xl"></i>
-        
-        </button>
       </div>
+    </section>
 
-      <div class="divider">OR</div>
-      {{-- Name  --}}
-      <div class="grid grid-flow-col gap-2">
-        <div class="form-control w-full input-primary">
-          <label class="label">
-            <span class="label-text">First Name</span>
-            <span class="label-text-alt text-gray-600">Top Right label</span>
-          </label>
-          <input type="text" class="input input-bordered input-primary w-full bg-base-200 " autofocus />
-          <label class="label">
-            <span class="label-text-alt text-gray-600">Bottom Left label</span>
-            <span class="label-text-alt text-gray-600">Bottom Right label</span>
-          </label>
+    <main
+      aria-label="Main"
+      class="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:py-12 lg:px-16 xl:col-span-6"
+    >
+      <div class="max-w-xl lg:max-w-3xl">
+        <div class="relative -mt-16 block lg:hidden">
+          <a class="inline-flex h-16 w-16 items-center justify-center rounded-full bg-white text-primary sm:h-20 sm:w-20" href="/">
+            <span class="sr-only">Home</span>
+            <div>LOGO</div>
+          </a>
         </div>
-    
-        <div class="form-control w-full input-primary">
-          <label class="label">
-            <span class="label-text">Last Name</span>
-            <span class="label-text-alt text-gray-600">Top Right label</span>
-          </label>
-          <input type="text" class="input input-bordered input-primary w-full bg-base-200 " autofocus />
-          <label class="label">
-            <span class="label-text-alt text-gray-600">Bottom Left label</span>
-            <span class="label-text-alt text-gray-600">Bottom Right label</span>
-          </label>
-        </div>
-    
-      </div>
-      {{-- Birthday  --}}
-      <div class="grid grid-flow-col gap-2 grid-cols-3">
-        <div class="form-control w-full max-w-xs">
-          <label class="label">
-            <span class="label-text">Birthday</span>
-          </label>
-          <select class="select select-bordered select-primary">
-            <option disabled selected>Month</option>
-            <option>Star Wars</option>
-            <option>Harry Potter</option>
-            <option>Lord of the Rings</option>
-            <option>Planet of the Apes</option>
-            <option>Star Trek</option>
-          </select>
-        </div>
-        <div class="form-control w-full max-w-xs">
-          <label class="label">
-            <span class="label-text">&nbsp;</span>
-          </label>
-          <select class="select select-bordered select-primary">
-            <option disabled selected>Day</option>
-            <option>Star Wars</option>
-            <option>Harry Potter</option>
-            <option>Lord of the Rings</option>
-            <option>Planet of the Apes</option>
-            <option>Star Trek</option>
-          </select>
-        </div>
-        <div class="form-control w-full max-w-xs">
-          <label class="label">
-            <span class="label-text">&nbsp;</span>
-          </label>
-          <select class="select select-bordered select-primary">
-            <option disabled selected>Year</option>
-            <option>Star Wars</option>
-            <option>Harry Potter</option>
-            <option>Lord of the Rings</option>
-            <option>Planet of the Apes</option>
-            <option>Star Trek</option>
-          </select>
-        </div>
-      </div>
-      {{-- Nationality  --}}
-      <div class="form-control w-full">
-        <label class="label">
-          <span class="label-text">Nationality</span>
-          <span class="label-text-alt">Alt label</span>
-        </label>
-        <select class="select select-bordered">
-          <option disabled selected>Select</option>
-          <option>Star Wars</option>
-          <option>Harry Potter</option>
-          <option>Lord of the Rings</option>
-          <option>Planet of the Apes</option>
-          <option>Star Trek</option>
-        </select>
-        <label class="label">
-          <span class="label-text-alt">Alt label</span>
-          <span class="label-text-alt">Alt label</span>
-        </label>
-      </div>
-      {{-- Username or Email --}}
-      <div class="form-control w-full input-primary">
-        <label class="label">
-          <span class="label-text">Username/Email</span>
-          <span class="label-text-alt text-gray-600">Top Right label</span>
-        </label>
-        <input type="text" class="input input-bordered input-primary w-full bg-base-200 " autofocus />
-        <label class="label">
-          <span class="label-text-alt text-gray-600">Bottom Left label</span>
-          <span class="label-text-alt text-gray-600">Bottom Right label</span>
-        </label>
-      </div>
-  
-      <div class="form-control w-full">
-        <label class="label">
-          <span class="label-text">Password</span>
-          <span class="label-text-alt text-gray-600">Top Right label</span>
-        </label>
-        <input type="password" placeholder="Type here" class="input input-bordered input-primary bg-base-200 w-full " />
-        <label class="label">
-          <span class="label-text-alt text-gray-600">Bottom Left label</span>
-        </label>
-      </div>
-      <button type="submit" class="inline-block rounded-lg bg-primary px-5 py-3 text-sm font-medium text-white uppercase w-full">
-          Sign in
-      </button>
-      <p class="text-sm text-center">
-          Already account?
-          <a class="underline text-primary" href="/login">Sign in</a>
+        <h1 class="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
+        Register
+      </h1>
+
+      <p class="mt-4 leading-relaxed text-gray-500">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam
+        dolorum aliquam, quibusdam aperiam voluptatum.
       </p>
-      <a class="text-sm underline text-primary py-12 text-center" href="/">Back to Home</a>
 
-    </form>
+        <form action="#" class="mt-8 grid grid-cols-6 gap-6">
+          <div class="col-span-6 sm:col-span-3">
+            <label
+              for="FirstName"
+              class="block text-sm font-medium text-gray-700"
+            >
+              First Name
+            </label>
+
+            <input
+              type="text"
+              id="FirstName"
+              name="first_name"
+              class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+            />
+          </div>
+
+          <div class="col-span-6 sm:col-span-3">
+            <label
+              for="LastName"
+              class="block text-sm font-medium text-gray-700"
+            >
+              Last Name
+            </label>
+
+            <input
+              type="text"
+              id="LastName"
+              name="last_name"
+              class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+            />
+          </div>
+
+          <div class="col-span-6">
+            <label for="Email" class="block text-sm font-medium text-gray-700">
+              Email
+            </label>
+
+            <input
+              type="email"
+              id="Email"
+              name="email"
+              class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+            />
+          </div>
+
+          <div class="col-span-6 sm:col-span-3">
+            <label
+              for="Password"
+              class="block text-sm font-medium text-gray-700"
+            >
+              Password
+            </label>
+
+            <input
+              type="password"
+              id="Password"
+              name="password"
+              class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+            />
+          </div>
+
+          <div class="col-span-6 sm:col-span-3">
+            <label
+              for="PasswordConfirmation"
+              class="block text-sm font-medium text-gray-700"
+            >
+              Password Confirmation
+            </label>
+
+            <input
+              type="password"
+              id="PasswordConfirmation"
+              name="password_confirmation"
+              class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+            />
+          </div>
+
+          <div class="col-span-6">
+            <label for="MarketingAccept" class="flex gap-4">
+              <input
+                type="checkbox"
+                id="MarketingAccept"
+                name="marketing_accept"
+                class="h-5 w-5 rounded-md border-gray-200 bg-white shadow-sm"
+              />
+
+              <span class="text-sm text-gray-700">
+                <p class="text-sm text-gray-500">
+                  By creating an account, you agree to our
+                  <a href="#" class="text-gray-700 underline">
+                    terms and conditions
+                  </a>
+                  and
+                  <a href="#" class="text-gray-700 underline">privacy policy</a>.
+                </p>
+              </span>
+            </label>
+          </div>
+
+          <div class="col-span-6 sm:flex sm:items-center sm:gap-4">
+            <button
+              class="inline-block shrink-0 rounded-md border border-primary w-full md:w-56 bg-primary px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-primary focus:outline-none focus:ring active:text-primary-focus"
+            >
+              Create an account
+            </button>
+
+            <p class="mt-4 text-sm text-gray-500 sm:mt-0">
+              Already have an account?
+              <a href="/login" class="text-gray-700 underline">Log in</a>.
+            </p>
+          </div>
+        </form>
+        <div class="divider">OR</div>
+        <div class="grid h-20 card rounded-box place-items-center gap-5 my-5">
+          <button class="inline-block w-full shrink-0 rounded-md border border-red-500 bg-red-500 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-red-500 focus:outline-none focus:ring active:text-red-700">
+            Connect with Google
+          </button>
+          <button class="inline-block w-full shrink-0 rounded-md border border-blue-500 bg-blue-500 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-500 focus:outline-none focus:ring active:text-blue-700">
+            Connect with Facebook
+          </button>
+
+        </div>
+      </div>
+    </main>
   </div>
-</div>
-</div>
-
-<script src="{{Vite::asset("resources/js/finisher-header.es5.min.js")}}" type="text/javascript"></script>
-<script type="text/javascript">
-  new FinisherHeader({
-    "count": 100,
-    "size": {
-      "min": 2,
-      "max": 8,
-      "pulse": 0
-    },
-    "speed": {
-      "x": {
-        "min": 0,
-        "max": 0.4
-      },
-      "y": {
-        "min": 0,
-        "max": 0.6
-      }
-    },
-    "colors": {
-      "background": "#16a34a",
-      "particles": [
-        "#fbfcca",
-        "#d7f3fe",
-        "#ffd0a7"
-      ]
-    },
-    "blending": "overlay",
-    "opacity": {
-      "center": 1,
-      "edge": 0
-    },
-    "skew": 0,
-    "shapes": [
-      "c"
-    ]
-  });
-  </script>
+</section>
 
 @include('partials.footer')

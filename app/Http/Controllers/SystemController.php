@@ -7,11 +7,22 @@ use Illuminate\Support\Facades\View;
 
 class SystemController extends Controller
 {
+    public function home(){
+
+        if(View::exists('system.main')){
+            $activeSidebar = "Home"; 
+            return view('system.main', ["activeBar" => $activeSidebar]);
+        }
+        else{
+            return abort(404);
+        }
+
+    }
     public function analytics(){
 
-        if(View::exists('admin.main')){
+        if(View::exists('system.main')){
             $activeSidebar = "Analytics"; 
-            return view('admin.main', ["activeBar" => $activeSidebar]);
+            return view('system.main', ["activeBar" => $activeSidebar]);
         }
         else{
             return abort(404);
@@ -20,9 +31,9 @@ class SystemController extends Controller
     }
     public function reservation(){
 
-        if(View::exists('admin.main')){
+        if(View::exists('system.main')){
             $activeSidebar = "Reservation"; 
-            return view('admin.main', ["activeBar" => $activeSidebar]);
+            return view('system.main', ["activeBar" => $activeSidebar]);
         }
         else{
             return abort(404);
@@ -31,9 +42,9 @@ class SystemController extends Controller
     }
     public function rooms(){
 
-        if(View::exists('admin.main')){
+        if(View::exists('system.main')){
             $activeSidebar = "Rooms"; // Sidebar active 
-            return view('admin.main', ["activeBar" => $activeSidebar]);
+            return view('system.main', ["activeBar" => $activeSidebar]);
         }
         else{
             return abort(404);
@@ -42,10 +53,10 @@ class SystemController extends Controller
     }
     public function accommodations(){
 
-        if(View::exists('admin.main')){
+        if(View::exists('system.main')){
             
             $activeSidebar = "Accommodations"; // Sidebar active 
-            return view('admin.main', ["activeBar" => $activeSidebar]);
+            return view('system.main', ["activeBar" => $activeSidebar]);
         }
         else{
             return abort(404);
@@ -55,9 +66,9 @@ class SystemController extends Controller
 
     public function accounts(){
 
-        if(View::exists('admin.main')){
+        if(View::exists('system.main')){
             $activeSidebar = "Accounts"; 
-            return view('admin.main', ["activeBar" => $activeSidebar]);
+            return view('system.main', ["activeBar" => $activeSidebar]);
         }
         else{
             return abort(404);
@@ -66,8 +77,8 @@ class SystemController extends Controller
 
     // public function login(){
 
-    //     if(View::exists('admin.pages.login')){
-    //         return view('admin.pages.login');
+    //     if(View::exists('system.pages.login')){
+    //         return view('system.pages.login');
     //     }
     //     else{
     //         return abort(404);

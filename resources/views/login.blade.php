@@ -1,105 +1,111 @@
 @include('partials.header')
-<div class="header finisher-header" style="width: 100%; height: 100%;">
-<div class=" bg-base-200 md:w-5/12 sm:w-full h-full md:h-auto rounded-2xl shadow-lg mx-auto place-items-center">
-  <div class="mx-auto px-4 py-20 my-20 sm:px-6 lg:px-8 relative">
-    <div class="mx-auto max-w-lg text-center">
-      <h1 class="text-2xl font-bold sm:text-3xl">Sign in<h1>
-  
 
-    </div>
+<section class="bg-white">
+  <div class="lg:grid lg:min-h-screen lg:grid-cols-12">
+    <aside
+      class="relative block h-16 lg:order-last lg:col-span-5 lg:h-full xl:col-span-6"
+    >
+      <img
+        alt="Pattern"
+        src="{{ asset('images/main-hero6.jpg')}}"
+        class="absolute inset-0 h-full w-full object-cover"
+      />
+    </aside>
 
-    <form action="" class="mx-auto mt-8 mb-0 max-w-md space-y-4 ">
-      <div class="form-control w-full input-primary">
-        <label class="label">
-          <span class="label-text">Username/Email</span>
-          <span class="label-text-alt text-gray-600">Top Right label</span>
-        </label>
-        <input type="text" class="input input-bordered input-primary w-full bg-base-200 " autofocus />
-        <label class="label">
-          <span class="label-text-alt text-gray-600">Bottom Left label</span>
-          <span class="label-text-alt text-gray-600">Bottom Right label</span>
-        </label>
+    <main
+      aria-label="Main"
+      class="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:py-12 lg:px-16 xl:col-span-6"
+    >
+      <div class="max-w-xl lg:max-w-3xl">
+        <a class="block text-primary" href="/">
+          <span class="sr-only">Home</span>
+          <div class="block md:hidden">
+            LOGO
+          </div>
+        </a>
+        <h1
+          class="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl"
+        >
+          Login
+        </h1>
+
+        <p class="mt-4 leading-relaxed text-gray-500">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam
+          dolorum aliquam, quibusdam aperiam voluptatum.
+        </p>
+
+        <form action="#" class="mt-8 grid grid-cols-6 gap-6">
+          <div class="col-span-6">
+            <div class="form-control w-full">
+              <label class="label">
+                <span class="label-text">Email</span>
+                <span class="label-text-alt">Top Right label</span>
+              </label>
+              <input type="text" class="input input-primary input-sm md:input-md w-full" />
+              <label class="label">
+                <span class="label-text-alt">Bottom Left label</span>
+                <span class="label-text-alt">Bottom Right label</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="col-span-6 sm:col-span-6">
+            <div class="form-control w-full">
+              <label class="label">
+                <span class="label-text">Password</span>
+                <span class="label-text-alt">Top Right label</span>
+              </label>
+              <input type="text" class="input input-primary input-sm md:input-md w-full" />
+              <label class="label">
+                <span class="label-text-alt">Bottom Left label</span>
+                <span class="label-text-alt">Bottom Right label</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="flex">
+              <label for="MarketingAccept" class="flex gap-4 w-full">
+                <input
+                  type="checkbox"
+                  id="MarketingAccept"
+                  name="marketing_accept"
+                  class="h-5 w-5 rounded-md border-gray-200 bg-white shadow-sm"
+                />
+
+                <span class="text-sm text-neutral">
+                  Remember me
+                </span>
+            </label>
+            <a class="link link-primary w-full">Forgot password</a>
+          </div>
+
+          <div class="col-span-6 sm:flex sm:items-center sm:gap-4">
+            <button
+              class="inline-block shrink-0 rounded-md border border-primary bg-primary px-12 py-3 w-full md:w-56 text-sm font-medium text-white transition hover:bg-transparent hover:text-primary focus:outline-none focus:ring active:text-blue-500"
+            >
+              LOGIN
+            </button>
+
+            <p class="mt-4 text-sm text-gray-500 sm:mt-0">
+              Already have an account?
+              <a href="/register" class="text-gray-700 underline">Sign up</a>.
+            </p>
+          </div>
+
+        </form>
+        <div class="divider">OR</div>
+        <div class="grid h-20 card rounded-box place-items-center gap-5 my-5">
+          <button class="inline-block w-full shrink-0 rounded-md border border-red-500 bg-red-500 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-red-500 focus:outline-none focus:ring active:text-red-700">
+            Connect with Google
+          </button>
+          <button class="inline-block w-full shrink-0 rounded-md border border-blue-500 bg-blue-500 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-500 focus:outline-none focus:ring active:text-blue-700">
+            Connect with Facebook
+          </button>
+
+        </div>
       </div>
-  
-      <div class="form-control w-full">
-        <label class="label">
-          <span class="label-text">Password</span>
-          <span class="label-text-alt text-gray-600">Top Right label</span>
-        </label>
-        <input type="text" placeholder="Type here" class="input input-bordered input-primary bg-base-200 w-full " />
-        <label class="label">
-          <span class="label-text-alt text-gray-600">Bottom Left label</span>
-          <span class="label-text-alt text-gray-600"><a href="" class="link link-primary">Forgot password?</a></span>
-        </label>
-      </div>
-      <button type="submit" class="inline-block rounded-lg bg-primary px-5 py-3 text-sm font-medium text-white uppercase w-full">
-          Sign in
-      </button>
-      <p class="text-sm text-center">
-          No account yet?
-          <a class="underline text-primary" href="/register">Sign up</a>
-      </p>
-      <div class="divider">OR</div>
-      <div class="grid h-full gap-5 card rounded-box place-items-center ">
-        <!-- Facebook -->
-        <button
-          type="submit"
-          class="btn btn-info text-white bg-blue-500 hover:text-blue-500 w-full h-full"          
-          >
-          <i class="fa-brands fa-square-facebook mx-3"></i>
-          Connect with Facebook
-        </button>
-        <!-- Facebook -->
-        <button
-          type="submit"
-          class="btn  btn-error bg-red-500 text-white hover:text-red-500 w-full h-full"          
-          >
-          <i class="fa-brands fa-google mx-3"></i>
-          Connect with Google
-        </button>
-        <a class="text-sm underline text-primary py-5" href="/">Back to Home</a>
-      </div>
-    </form>
+    </main>
   </div>
-</div>
-</div>
+</section>
 
-<script src="{{Vite::asset("resources/js/finisher-header.es5.min.js")}}" type="text/javascript"></script>
-<script type="text/javascript">
-  new FinisherHeader({
-    "count": 100,
-    "size": {
-      "min": 2,
-      "max": 8,
-      "pulse": 0
-    },
-    "speed": {
-      "x": {
-        "min": 0,
-        "max": 0.4
-      },
-      "y": {
-        "min": 0,
-        "max": 0.6
-      }
-    },
-    "colors": {
-      "background": "#16a34a",
-      "particles": [
-        "#fbfcca",
-        "#d7f3fe",
-        "#ffd0a7"
-      ]
-    },
-    "blending": "overlay",
-    "opacity": {
-      "center": 1,
-      "edge": 0
-    },
-    "skew": 0,
-    "shapes": [
-      "c"
-    ]
-  });
-  </script>
 @include('partials.footer')

@@ -1,3 +1,5 @@
 import './bootstrap';
+import './analytics-chart.js';
+// import './reservation-calendar.js';
 
-// import '../assets/js/fullcalendar-6.1.5/dist/index.global.min.js'
+

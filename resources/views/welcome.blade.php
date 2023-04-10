@@ -2,18 +2,30 @@
 @include('components.navbar.navbar')
 
 {{-- Banner --}}
-<section class="hero min-h-screen" style="background-image: url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);">
+<div class="swiper mySwiper absolute">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" style="background-image: url({{ asset('./images/main-hero1.jpg')}});"></div>
+    <div class="swiper-slide" style="background-image: url({{ asset('./images/main-hero2.jpg')}});"></div>
+    <div class="swiper-slide" style="background-image: url({{ asset('./images/main-hero3.jpg')}});"></div>
+    <div class="swiper-slide" style="background-image: url({{ asset('./images/main-hero4.jpg')}});"></div>
+    <div class="swiper-slide" style="background-image: url({{ asset('./images/main-hero5.jpg')}});"></div>
+    <div class="swiper-slide" style="background-image: url({{ asset('./images/main-hero6.jpg')}});"></div>
+  </div>
+</div>
+<section class="hero min-h-screen swiper mySwiper">
   <div class="hero-overlay bg-opacity-70"></div>
-  <div class="hero-content text-center text-white">
+  <div class="hero-content text-center text-white ">
     <div class="max-w-md">
       <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
       <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-      <button class="btn btn-primary">Get Started</button>
+      {{-- <button class="btn btn-primary">Get Started</button> --}}
     </div>
   </div>
+
+  {{-- Slider button --}}
+  <div class="swiper-pagination"></div>
+
 </section>
-
-
   <section >
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
       <div class="max-w-3xl">
@@ -344,5 +356,9 @@
 
 
   </script>
+
+  <script src="{{Vite::asset("resources/js/swiper/swiper-bundle.js")}}"></script>
+  <script src="{{Vite::asset("resources/js/custom-slider.js")}}"></script>
+
   
 @include('partials.footer')
