@@ -1,132 +1,74 @@
 <section class="bg-gray-100">
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+      <div class="gap-x-16 gap-y-8">
         <div class="lg:col-span-2 lg:py-12">
-            <h1 class="max-w-xl font-bold uppercase text-3xl">
+            <h1 class="font-bold uppercase text-3xl text-center w-full">
                 Contact Us
-              </h1>
-  
-          <div class="mt-8">
-            <a href="" class="text-2xl font-bold text-pink-600">
-              0151 475 4450
-            </a>
-  
-            <address class="mt-2 not-italic">
-              282 Kevin Brook, Imogeneborough, CA 58517
-            </address>
+            </h1>
+          <div class="grid gap-1 grid-flow-col mt-8 h-full">
+            <div class="card w-96 glass hover:bg-primary hover:text-white">
+              <div class="card-body">
+                <h2 class="card-title border-l-4 border-primary pl-5">Alvin Bognot</h2>
+                <p>
+                  <div><i class="fa-regular fa-address-book text-xl"></i> 09198614102 / 09075986000</div>
+                  <div>
+                    <a href="https://www.facebook.com/alvin.bognot.9" class="link link-hover">
+                      <i class="fa-brands fa-facebook text-xl"></i>
+                      Facebook
+                    </a>
+                  </div>
+                </p>
+              </div>
+            </div>
+            <div class="card w-96 glass hover:bg-primary hover:text-white">
+              <div class="card-body">
+                <h2 class="card-title border-l-4 border-primary pl-5">Angelita Bognot</h2>
+                <p>
+                  <div>
+                    <i class="fa-regular fa-address-book text-xl"></i> 09498444893
+                  </div>
+                  <div>
+                    <a href="https://www.facebook.com/angie.bognot" class="link link-hover">
+                      <i class="fa-brands fa-facebook text-xl"></i>
+                      Facebook 
+                    </a>
+                  </div>
+                  <div>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=angelitabognot@gmail.com" class="link link-hover">
+                      <i class="fa-regular fa-envelope text-xl"></i>
+                      angelitabognot@gmail.com
+                    </a>
+                  </div>
+                </p>
+              </div>
+            </div>
+          <div class="card w-96 glass hover:bg-primary hover:text-white">
+            <div class="card-body">
+              <h2 class="card-title border-l-4 border-primary pl-5">Other</h2>
+              <p>
+                <div>
+                  <i class="fa-brands fa-whatsapp text-xl"></i>
+                  09198614102
+                </div>
+                <div>
+                  <a href="https://www.facebook.com/100057519735244" class="link link-hover">
+                    <i class="fa-brands fa-facebook text-xl"></i>
+                    Facebook Page
+                  </a>
+                </div>
+                <div>
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bognothomestay@gmail.com" class="link link-hover">
+                    <i class="fa-regular fa-envelope text-xl"></i>
+                    bognothomestay@gmail.com
+                  </a>
+                </div>
+              </p>
           </div>
         </div>
+        </div>
   
-        <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-          <form action="" class="space-y-4">
-            <div>
-              <label class="sr-only" for="name">Name</label>
-              <input
-                class="w-full rounded-lg border-gray-200 p-3 text-sm"
-                placeholder="Name"
-                type="text"
-                id="name"
-              />
-            </div>
-  
-            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <div>
-                <label class="sr-only" for="email">Email</label>
-                <input
-                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
-                  placeholder="Email address"
-                  type="email"
-                  id="email"
-                />
-              </div>
-  
-              <div>
-                <label class="sr-only" for="phone">Phone</label>
-                <input
-                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
-                  placeholder="Phone Number"
-                  type="tel"
-                  id="phone"
-                />
-              </div>
-            </div>
-  
-            <div class="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
-              <div>
-                <input
-                  class="peer sr-only"
-                  id="option1"
-                  type="radio"
-                  tabindex="-1"
-                  name="option"
-                />
-  
-                <label
-                  for="option1"
-                  class="block w-full rounded-lg border border-gray-200 p-3 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white"
-                  tabindex="0"
-                >
-                  <span class="text-sm font-medium"> Option 1 </span>
-                </label>
-              </div>
-  
-              <div>
-                <input
-                  class="peer sr-only"
-                  id="option2"
-                  type="radio"
-                  tabindex="-1"
-                  name="option"
-                />
-  
-                <label
-                  for="option2"
-                  class="block w-full rounded-lg border border-gray-200 p-3 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white"
-                  tabindex="0"
-                >
-                  <span class="text-sm font-medium"> Option 2 </span>
-                </label>
-              </div>
-  
-              <div>
-                <input
-                  class="peer sr-only"
-                  id="option3"
-                  type="radio"
-                  tabindex="-1"
-                  name="option"
-                />
-  
-                <label
-                  for="option3"
-                  class="block w-full rounded-lg border border-gray-200 p-3 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white"
-                  tabindex="0"
-                >
-                  <span class="text-sm font-medium"> Option 3 </span>
-                </label>
-              </div>
-            </div>
-  
-            <div>
-              <label class="sr-only" for="message">Message</label>
-  
-              <textarea
-                class="w-full rounded-lg border-gray-200 p-3 text-sm"
-                placeholder="Message"
-                rows="8"
-                id="message"
-              ></textarea>
-            </div>
-  
-            <div class="mt-4">
-              <button
-                type="submit"
-                class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
-              >
-                Send Enquiry
-              </button>
-            </div>
-          </form>
+        <div class="rounded-lg bg-white p-8 mt-8 shadow-lg h-96 lg:p-12">
+            <label class="text-4xl text" for="name">Google map</label>
         </div>
       </div>
     </div>

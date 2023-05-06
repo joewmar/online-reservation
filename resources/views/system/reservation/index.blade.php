@@ -1,4 +1,4 @@
-<section class="bg-neutral-300 text-netural w-screen h-full ml-0 md:ml-56 mt-16">
+<section class="{{$systemBG}} text-netural w-screen h-full ml-0 md:ml-56 mt-16">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
       <div class="mx-auto max-w-lg text-center">
         <h2 class="text-3xl font-extrabold sm:text-4xl">Reservation</h2>
@@ -52,3 +52,22 @@
       </div>    
     </div>    
 </section>
+
+<script type="text/javascript" src='{{Vite::asset("resources/js/fullcalendar/dist/index.global.js")}}'></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        aspectRatio: 2,
+        height: 450,
+        initialView: 'dayGridMonth',
+        headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+        },
+    });
+    calendar.render();
+    });
+
+</script>

@@ -5,10 +5,18 @@
 <section style="background-image: url({{ asset('./images/main-hero3.jpg')}});">
 <div>
   <div class="mx-auto max-w-screen-xl card px-4 py-8 sm:px-6 sm:py-12 lg:px-8 bg-base-200 pt-4">
-    <x-steps :$steps />
-      <header>
+
+    <div class="flex justify-center item- pb-10 text-center ">
+      <ul class="w-full steps steps-vertical lg:steps-horizontal">
+        <li class="step step-primary">Accommodations and Tour</li>
+        <li class="step">Details</li>
+        <li class="step">Confirmation</li>
+      </ul>
+    </div>
+    
+    <header>
         <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">
-          Choose Accommodations
+          Choose Accommodations and Tour
         </h2>
 
         {{-- <p class="mt-4 max-w-lg text-gray-500">
@@ -61,10 +69,38 @@
               </select>
             </div>
 
+            {{-- Number of Guest --}}
+            <div class="form-control w-full">
+              <label class="label">
+                <span class="label-text">Number of Guest</span>
+              </label>
+              <input type="number" class="input input-bordered input-primary w-full" min="1" value="1"/>
+            </div>
+
             {{-- Payment Method --}}
             <div class="form-control">
               <label class="label">
                 <span class="label-text">Payment Method</span>
+              </label>
+              <select class="select select-primary w-full max-w-xs">
+                <option disabled selected>Select</option>
+                <option>Walk in</option>
+                <option>Paypal: Online Payment</option>
+              </select>
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Payment Method</span>
+              </label>
+              <select class="select select-primary w-full max-w-xs">
+                <option disabled selected>No Rides</option>
+                <option>ATV</option>
+                <option></option>
+              </select>
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text"></span>
               </label>
               <select class="select select-primary w-full max-w-xs">
                 <option disabled selected>Select</option>
@@ -82,39 +118,13 @@
         {{-- --------------------------------------------------------------------- --}}
         {{-- Packages Button --}}
         <div class="lg:col-span-3 h-full">
-          <h1 class="text-2xl my-5">Packages</h1>
+          <h1 class="text-2xl my-5"></h1>
           <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             @include('customer.reservations.step1.packages');
           </ul>
           <div class="divider"></div> 
           {{-- Room Accommodation --}}
           <h1 class="text-2xl mt-5">Room Accommodations</h1>
-
-            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 my-5 w-full lg:w-4/5">
-              <div class="form-control ">
-                <label class="label">
-                  <span class="label-text">Choose Room Type</span>
-                </label>
-                <select class="select select-primary w-full">
-                  <option disabled selected>Select Room Type</option>
-                  <option>Solo</option>
-                  <option>Double</option>
-                  <option>Triple</option>
-                  <option>Quad</option>
-                </select>
-              </div>
-
-              <div class="form-control w-full">
-                <label class="label">
-                  <span class="label-text">Number of Guest</span>
-                </label>
-                <input type="number" class="input input-bordered input-primary w-full" value="1"/>
-                <label class="label">
-                  <span class="label-text-alt">Bottom Left label</span>
-                </label>
-              </div>
-            </div>
-
           <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             @include('customer.reservations.step1.rooms');
           </ul>

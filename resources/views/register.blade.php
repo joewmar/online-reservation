@@ -4,14 +4,9 @@
     <section
       class="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6"
     >
+    <a href="/" title="Home">
       <img alt="hero" src="{{asset('images/main-hero3.jpg')}}" class="absolute inset-0 h-full w-full object-cover opacity-80"/>
-      <div class="hidden lg:relative lg:block lg:p-12">
-        <a class="block text-white" href="/">
-          <span class="sr-only">Home</span>
-          <div>LOGO</div>
-        </a>
-
-      </div>
+    </a>
     </section>
 
     <main

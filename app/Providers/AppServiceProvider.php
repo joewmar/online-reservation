@@ -21,6 +21,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // System bbg
+        $systemBG = "bg-base-200";
+        View::share('systemBG', $systemBG);
+
         // Sidebar System
         $arrSideBarItems = 
         [
@@ -36,24 +40,39 @@ class AppServiceProvider extends ServiceProvider
                 "icon" => "fa-solid fa-house",
                 "link" => "/system/rooms",
             ],
-            "Accommodations" => [
+            "Tour" => [
                 "icon" => "fa-solid fa-location-dot",
-                "link" => "/system/accommodations",
+                "link" => "/system/tour",
             ],
             "Analytics" => [
                 "icon" => "fa-solid fa-chart-simple",
                 "link" => "/system/analytics"
             ],
-            "News" => [
+            "Announcement" => [
                 "icon" => "fa-solid fa-newspaper",
-                "link" => "/system/news",
+                "link" => "/system/announcement",
             ],
             "Feedback" => [
                 "icon" => "fa-solid fa-comments",
                 "link" => "/system/feedback",
             ],
+            "Website Content" => [
+                "icon" => "fa-solid fa-browser",
+                "link" => "/system/webcontent",
+            ],
         ];
         View::share('sidebarItems', $arrSideBarItems);
+
+        $arrNavItems =[
+            "Home" => "/", 
+            "About Us" => "/about", 
+            "Accommodation" => "/accommodation",
+            "Contact Us" => "/contact",
+            "Login" => "/login",
+            "Profile" => "/profile",
+            "My Reservation" => "/myreservation",
+          ];
+        View::share('custNavbar', $arrNavItems);
 
         // Nationality Selection   
         $arrNationality = array(

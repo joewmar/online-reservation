@@ -51,11 +51,11 @@ class SystemController extends Controller
         }
 
     }
-    public function accommodations(){
+    public function tour(){
 
         if(View::exists('system.main')){
             
-            $activeSidebar = "Accommodations"; // Sidebar active 
+            $activeSidebar = "Tour"; // Sidebar active 
             return view('system.main', ["activeBar" => $activeSidebar]);
         }
         else{
@@ -64,10 +64,10 @@ class SystemController extends Controller
 
     }
 
-    public function accounts(){
+    public function announcement(){
 
         if(View::exists('system.main')){
-            $activeSidebar = "Accounts"; 
+            $activeSidebar = "Announcement"; 
             return view('system.main', ["activeBar" => $activeSidebar]);
         }
         else{
@@ -75,13 +75,59 @@ class SystemController extends Controller
         }
     }
 
-    // public function login(){
+    public function messages(){
+        if(View::exists('system.main')){
+            $activeSidebar = "Announcement"; 
+            return view('system.main', ["activeBar" => $activeSidebar]);
+        }
+        else{
+            return abort(404);
+        }
+    }
+    public function feedback(){
+        if(View::exists('system.main')){
+            $activeSidebar = "Feedback"; 
+            return view('system.main', ["activeBar" => $activeSidebar]);
+        }
+        else{
+            return abort(404);
+        }
+    }
+    public function webcontent(){
+        if(View::exists('system.main')){
+            $activeSidebar = "Website Content"; 
+            return view('system.main', ["activeBar" => $activeSidebar]);
+        }
+        else{
+            return abort(404);
+        }
+    }
+    public function settings(){
+        if(View::exists('system.settings.index')){
+            $activeSidebar = "Settings"; 
+            return view('system.settings.index', ["activeBar" => $activeSidebar]);
+        }
+        else{
+            return abort(404);
+        }
+    }
+    public function profile(){
+        if(View::exists('system.profile.index')){
+            $activeSidebar = "Profile"; 
+            return view('system.profile.index', ["activeBar" => $activeSidebar]);
+        }
+        else{
+            return abort(404);
+        }
+    }
 
-    //     if(View::exists('system.pages.login')){
-    //         return view('system.pages.login');
-    //     }
-    //     else{
-    //         return abort(404);
-    //     }
-    // }
+    public function login(){
+
+        if(View::exists('system.login')){
+            return view('system.login');
+        }
+        else{
+            return abort(404);
+        }
+    }
 }

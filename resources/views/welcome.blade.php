@@ -1,6 +1,5 @@
 @include('partials.header')
-@include('components.navbar.navbar')
-
+<x-cus_navbar :activeNav="$activeNav"/>
 {{-- Banner --}}
 <div class="swiper mySwiper absolute">
   <div class="swiper-wrapper">

@@ -49,4 +49,22 @@ class LandingPageController extends Controller
             return abort(404);
         }
     }
+    public function profile(){
+        if(View::exists('profile')){
+            $activeNavItem = 'Profile';
+            return view('profile', ["activeNav" => $activeNavItem]);
+        }
+        else{
+            return abort(404);
+        }
+    }
+    public function myreservation(){
+        if(View::exists('my_reservation')){
+            $activeNavItem = 'My Reservation';
+            return view('my_reservation', ["activeNav" => $activeNavItem]);
+        }
+        else{
+            return abort(404);
+        }
+    }
 }
