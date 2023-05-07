@@ -16,7 +16,7 @@
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="toggleColour text-white menu menu-horizontal px-1">
-      @include('components.customer.navbar_items')
+      @include('components.customer.navbar_items', ['activeNav' => $activeNav])
     </ul>
   </div>
   <div class="navbar-end">

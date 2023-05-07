@@ -1,6 +1,6 @@
 <nav class="hidden md:flex navbar row-span-full bg-base-100 fixed z-30 shadow-md">
     <div class="flex-1">
-      <a class="btn btn-ghost normal-case text-xl">LOGO</a>
+      <a href="/system/home"class="btn btn-ghost normal-case text-xl">LOGO</a>
     </div>
     <div class="flex-none">
       <div class="dropdown dropdown-end">

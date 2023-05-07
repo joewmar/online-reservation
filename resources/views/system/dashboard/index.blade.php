@@ -12,11 +12,11 @@
         <article class="flex items-end justify-between rounded-lg border border-gray-100 bg-white p-6">
           <div class="flex items-center gap-4">
             <span class="hidden rounded-full bg-gray-100 p-2 text-gray-600 sm:block">
-              <i class="fa-solid fa-users"></i>
+              <i class="fa-solid fa-earth-americas"></i>
             </span>
 
             <div>
-              <p class="text-sm text-gray-500">Total Customer have accounts</p>
+              <p class="text-sm text-gray-500">Total Customer reserved online</p>
 
               <p class="text-2xl font-medium text-gray-900">$240.94</p>
             </div>
@@ -30,8 +30,36 @@
             </span>
 
             <div>
-              <p class="text-sm text-gray-500">Total Customer have no accounts</p>
+              <p class="text-sm text-gray-500">Total Customer physical reserved</p>
 
+              <p class="text-2xl font-medium text-gray-900">$240.94</p>
+            </div>
+          </div>
+        </article>
+
+
+      </div>       
+      <div class="my-8 grid grid-flow-row md:grid-flow-col gap-2">
+        <article class="flex items-end justify-between rounded-lg border border-gray-100 bg-white p-6">
+          <div class="flex items-center gap-4">
+            <span class="hidden rounded-full bg-gray-100 p-2 text-gray-600 sm:block">
+              <i class="fa-solid fa-box"></i>
+            </span>
+
+            <div>
+              <p class="text-sm text-gray-500">Best Sales Packages Tour</p>
+              <p class="text-2xl font-medium text-gray-900">$240.94</p>
+            </div>
+          </div>
+        </article>
+        <article class="flex items-end justify-between rounded-lg border border-gray-100 bg-white p-6">
+          <div class="flex items-center gap-4">
+            <span class="hidden rounded-full bg-gray-100 p-2 text-gray-600 sm:block">
+              <i class="fa-solid fa-home"></i>
+            </span>
+
+            <div>
+              <p class="text-sm text-gray-500">Best Room Type Accommodation</p>
               <p class="text-2xl font-medium text-gray-900">$240.94</p>
             </div>
           </div>
@@ -60,7 +88,6 @@
             </div>
           </div>
         </article>
-
       </div>       
       <div class="my-8 grid grid-flow-row md:grid-flow-col gap-2">
         <article class="flex items-start justify-center rounded-lg border border-gray-100 bg-white py-6">

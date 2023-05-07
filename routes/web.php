@@ -41,6 +41,9 @@ Route::controller(SystemController::class)->group(function(){
     Route::get('/system/feedback', 'feedback');
     Route::get('/system/webcontent', 'webcontent');
     Route::get('/system/settings', 'settings');
+    Route::get('/system/settings/rides', 'rides');
+    Route::get('/system/settings/accounts', 'accounts');
     Route::get('/system/profile', 'profile');
+    Route::get('/system/profile/link', 'link');
     Route::get('/system/login', 'login');
 });

@@ -25,14 +25,14 @@
           class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:px-8"
         >
           <div class="mx-auto max-w-lg text-center ">
-            <h2 class="text-3xl font-bold sm:text-4xl">Rooms</h2>
+            <h2 class="text-3xl font-bold sm:text-4xl">Rides</h2>
       
           </div>
       
           <div class="mt-8">
             <div class="mb-3 float-right">
               <a href="#" class="btn btn-primary text-base-100">
-                Add Room Type
+                Add Rides
               </a>
             </div>
             <div class="overflow-x-auto w-full shadow-2xl">
@@ -41,8 +41,8 @@
                 <thead>
                 <tr>
                   <th>No</th>
-                  <th>Room Type</th>
-                  <th>How many rooms</th>
+                  <th>Ride Vechile Model</th>
+                  <th>How many vechicle</th>
                   <th>Maximium of Guest</th>
                   <th>Action</th>
                 </tr>
@@ -51,21 +51,21 @@
                 <!-- row 1 -->
                 <tr>
                   <td>1</td>
-                  <td>Charlet</td>
-                  <td>5 Rooms</td>
-                  <td>4 Guest</td>
+                  <td>ATV</td>
+                  <td>4</td>
+                  <td>2 Guest</td>
                   <th>
-                  <button class="link link-primary">More details</button>
+                    <button class="link link-primary">Edit details</button>
                   </th>
                 </tr>
                 <!-- row 2 -->
                 <tr>
                     <td>1</td>
-                    <td>Big House</td>
-                    <td>3 Rooms</td>
-                    <td>5 Guest</td>
+                    <td>4x4 Jeep Wrangler</td>
+                    <td>5</td>
+                    <td>7 Guest</td>
                     <th>
-                        <button class="link link-primary">More details</button>
+                        <button class="link link-primary">Edit details</button>
                     </th>
                 </tr>
     

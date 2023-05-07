@@ -1,12 +1,10 @@
 @include('partials.header')
-@include('components.system.navbar')
+<x-system_navbar />
 
 <main class="flex">
-    @include('components.system.sidebar', [$activeBar])
-    
-    
+    <x-sidebar :items="$sidebarItems" :active="$activeBar"/>
+
+    <x-step1_reservation :action=""/>
+
 </main>
-
-{{-- Calendar Control --}}
-
 @include('partials.footer')

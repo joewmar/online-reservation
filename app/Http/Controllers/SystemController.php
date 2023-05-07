@@ -104,8 +104,26 @@ class SystemController extends Controller
     }
     public function settings(){
         if(View::exists('system.settings.index')){
-            $activeSidebar = "Settings"; 
+            $activeSidebar = "Rooms"; 
             return view('system.settings.index', ["activeBar" => $activeSidebar]);
+        }
+        else{
+            return abort(404);
+        }
+    }
+    public function rides(){
+        if(View::exists('system.settings.rides')){
+            $activeSidebar = "Rides"; 
+            return view('system.settings.rides', ["activeBar" => $activeSidebar]);
+        }
+        else{
+            return abort(404);
+        }
+    }
+    public function accounts(){
+        if(View::exists('system.settings.accounts')){
+            $activeSidebar = "Accounts"; 
+            return view('system.settings.accounts', ["activeBar" => $activeSidebar]);
         }
         else{
             return abort(404);
@@ -113,8 +131,17 @@ class SystemController extends Controller
     }
     public function profile(){
         if(View::exists('system.profile.index')){
-            $activeSidebar = "Profile"; 
+            $activeSidebar = "Edit Profile"; 
             return view('system.profile.index', ["activeBar" => $activeSidebar]);
+        }
+        else{
+            return abort(404);
+        }
+    }
+    public function link(){
+        if(View::exists('system.profile.link')){
+            $activeSidebar = "Social Link"; 
+            return view('system.profile.link', ["activeBar" => $activeSidebar]);
         }
         else{
             return abort(404);

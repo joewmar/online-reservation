@@ -1,11 +1,5 @@
 <section class="{{$systemBG}} text-white w-screen h-full ml-0 md:ml-56 md:mt-16">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
-      <div class="flex justify-start w-full">
-        <div class="tabs">
-          <a href="/system/announcement" class="tab tab-lg tab-lifted tab-active">Announcement</a>
-          <a href="/system/announcement/messages" class="tab tab-lg tab-lifted ">Messages</a> 
-        </div>
-      </div>  
       <div class="flex flex-col p-6 space-y-4 sm:p-10 bg-base-100 text-neutral w-full">
         <h2 class="text-xl font-semibold">Create Annoucement</h2>
         <div class="overflow-x-auto w-full">

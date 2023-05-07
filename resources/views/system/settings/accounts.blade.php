@@ -25,14 +25,13 @@
           class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:px-8"
         >
           <div class="mx-auto max-w-lg text-center ">
-            <h2 class="text-3xl font-bold sm:text-4xl">Rooms</h2>
+            <h2 class="text-3xl font-bold sm:text-4xl">Employee Accounts</h2>
       
           </div>
-      
           <div class="mt-8">
             <div class="mb-3 float-right">
               <a href="#" class="btn btn-primary text-base-100">
-                Add Room Type
+                Add Account
               </a>
             </div>
             <div class="overflow-x-auto w-full shadow-2xl">
@@ -40,37 +39,32 @@
                 <!-- head -->
                 <thead>
                 <tr>
-                  <th>No</th>
-                  <th>Room Type</th>
-                  <th>How many rooms</th>
-                  <th>Maximium of Guest</th>
+                  <th>Id</th>
+                  <th>Full Name</th>
+                  <th>Role</th>
                   <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
                 <!-- row 1 -->
                 <tr>
-                  <td>1</td>
-                  <td>Charlet</td>
-                  <td>5 Rooms</td>
-                  <td>4 Guest</td>
+                  <td>20235687</td>
+                  <td>Juan Dela Cruz</td>
+                  <td>Front Desk</td>
                   <th>
                   <button class="link link-primary">More details</button>
                   </th>
                 </tr>
                 <!-- row 2 -->
                 <tr>
-                    <td>1</td>
-                    <td>Big House</td>
-                    <td>3 Rooms</td>
-                    <td>5 Guest</td>
+                    <td>1897871</td>
+                    <td>Mark Lito Basco</td>
+                    <td>Front Desk</td>
                     <th>
-                        <button class="link link-primary">More details</button>
+                        <button class="link link-primary">Edit details</button>
                     </th>
                 </tr>
-    
                 </tbody>
-                
               </table>
               </div>
           </div>
